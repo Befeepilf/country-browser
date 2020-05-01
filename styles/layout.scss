@@ -1,0 +1,17 @@
+@import 'breakpoints';
+@import 'colors';
+
+.container {
+  width: 100%;
+  max-width: $width-lg;
+  padding: 0 56px;
+  margin: 0 auto;
+}
+
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

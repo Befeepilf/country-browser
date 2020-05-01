@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+@import 'breakpoints';
+@import 'colors';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+button {
+  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000;
+  background-color: $light-gray;
+  transition: color 0.3s, background-color 0.3s;
+
+  &.dark {
+    color: #fff;
+    background-color: $dark-blue-2;
+
+    button, .bg-element {
+      background-color: $dark-blue-1;
+    }
+
+    button:hover {
+      background-color: $dark-blue-2;
+    }
+  }
+}
+
+button, .bg-element {
+  background-color: #fff;;
+  transition: background-color 0.3s;
+}
+
+button, .input {
+  padding: 14px 21px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: $light-gray;
+}

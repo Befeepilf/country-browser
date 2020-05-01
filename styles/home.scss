@@ -1,0 +1,41 @@
+p {
+  font-size: 0.875rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  label {
+    position: absolute;
+    left: 14px;
+    line-height: 1;
+  }
+
+  input[type=search] {
+    background: none;
+    border: none;
+    outline: none;
+    overflow: show;
+
+    & + label {
+      cursor: text;
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+
+    &:focus + label, &:valid + label {
+      transform: scale(0.75) translateY(-150%);
+    }
+  }
+
+  select {
+    background: none;
+  }
+}

@@ -8,8 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/icons": "^4.9.1",
     "next": "9.3.6",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@zeit/next-preact": "^0.1.0",
+    "@zeit/next-sass": "^1.0.1",
+    "next-compose-plugins": "^2.2.0",
+    "node-sass": "^4.14.0",
+    "preact": "^10.4.1",
+    "preact-ssr-prepass": "^1.0.1"
   }
 }
