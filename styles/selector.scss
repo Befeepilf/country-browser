@@ -1,0 +1,46 @@
+.selector {
+  display: flex;
+  position: relative;
+  min-width: 210px;
+  padding: 14px 21px;
+  border-radius: 5;
+
+  .placeholder, .dropdown .option {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 14px 21px;
+    cursor: pointer;
+  }
+
+  .placeholder.active {
+    z-index: 2;
+  }
+
+  .dropdown .option {
+    transition: transform 0.3s;
+
+    &.selected {
+      z-index: 2;
+    }
+  }
+
+  &.active {
+    .dropdown .option {
+      transform: translateY(calc((var(--index) + 1) * 100%));
+    }
+
+    svg {
+      transform: rotate(-180deg);
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 21px;
+    z-index: 3;
+    transition: transform 0.3s;
+  }
+}

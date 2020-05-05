@@ -9,9 +9,22 @@
 }
 
 header {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 14px;
+      margin-right: 7px;
+      fill: currentColor;
+    }
   }
 }

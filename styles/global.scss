@@ -12,10 +12,15 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 p {
   font-weight: 300;
+}
+
+img {
+  max-width: 100%;
 }
 
 button {
@@ -27,7 +32,7 @@ button {
 
 #root {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Nunito Sans', sans-serif;
   color: #000;
   background-color: $light-gray;

@@ -5,6 +5,7 @@ p {
 .search {
   display: flex;
   justify-content: space-between;
+  margin: 21px 0;
 }
 
 .input {
@@ -19,10 +20,17 @@ p {
   }
 
   input[type=search] {
+    color: inherit;
     background: none;
     border: none;
     outline: none;
-    overflow: show;
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
 
     & + label {
       cursor: text;
@@ -34,8 +42,9 @@ p {
       transform: scale(0.75) translateY(-150%);
     }
   }
+}
 
-  select {
-    background: none;
-  }
+#countries {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

@@ -8,10 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.13",
     "@material-ui/icons": "^4.9.1",
     "next": "9.3.6",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "swr": "^0.2.0",
+    "unfetch": "^4.1.0"
   },
   "devDependencies": {
     "@zeit/next-preact": "^0.1.0",
